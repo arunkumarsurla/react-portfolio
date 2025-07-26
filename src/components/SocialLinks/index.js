@@ -12,7 +12,6 @@ const SocialLinks = () => {
               aria-label="GitHub"
               target="_blank"
             >
-              <title>GitHub</title>
               <i className="fab fa-github" />
             </a>
           </li>
@@ -23,7 +22,6 @@ const SocialLinks = () => {
               aria-label="Codepen"
               target="_blank"
             >
-              <title>Codepen</title>
               <i className="fab fa-codepen" />
             </a>
           </li>
@@ -34,7 +32,6 @@ const SocialLinks = () => {
               aria-label="Twitter"
               target="_blank"
             >
-              <title>Twitter</title>
               <i className="fa-brands fa-x-twitter" />
             </a>
           </li>
@@ -45,7 +42,6 @@ const SocialLinks = () => {
               aria-label="Linkedin"
               target="_blank"
             >
-              <title>linkedin</title>
               <i className="fab fa-linkedin-in" />
             </a>
           </li>
@@ -56,7 +52,6 @@ const SocialLinks = () => {
               aria-label="Whatsapp"
               target="_blank"
             >
-              <title>Whatsapp</title>
               <i className="fab fa-whatsapp" />
             </a>
           </li>
