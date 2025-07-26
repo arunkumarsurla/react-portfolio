@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <>
@@ -34,20 +36,20 @@ const Home = () => {
               technologies to stay ahead in the ever-evolving digital landscape.
             </p>
             <div style={{ transitionDelay: "500ms" }}>
-              <a
+              <Link
                 className="buttons box-animation"
-                href="#aboutSection"
+                to="/about"
                 rel="noreferrer"
               >
                 About Me
-              </a>
-              <a
+              </Link>
+              <Link
                 className="buttons box-animation"
-                href="#contactSection"
+                to="/contact"
                 rel="noreferrer"
               >
                 Contact Me
-              </a>
+              </Link>
             </div>
           </div>
         </div>
