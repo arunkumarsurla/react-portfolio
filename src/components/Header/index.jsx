@@ -30,7 +30,7 @@ const DesktopHeader = () => {
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav ml-auto">
           <NavLink
-            className={active === "/" ? "active" : ""}
+            className={active === "" ? "active" : ""}
             to="/"
             onClick={() => handleClick("/")}
           >
@@ -110,7 +110,7 @@ const MobileHeader = () => {
     <div className="mobile-header fixed-top">
       <div className="mobile-nav-row">
         <NavLink
-          className={`mobile-nav-item ${active === "/" ? "active" : ""}`}
+          className={`mobile-nav-item ${active === "" ? "active" : ""}`}
           to="/"
           onClick={() => handleClick("/")}
         >
