@@ -950,6 +950,9 @@ a {
   .bg-line_decorators {
     display: none;
   }
+  .spinner{
+    left:43% !important;
+  }
 }
 
 .progress-bar {
