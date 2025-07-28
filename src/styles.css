@@ -20,7 +20,6 @@ body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
 body {
-  margin: 0px;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   /* background:conic-gradient(from 90deg at 2px 2px,#000000 90deg,#1a1a1a 0) 0 0/30px 30px; */
@@ -102,9 +101,14 @@ body {
 .mobile-social-list {
   display: none;
 }
+@media (min-width: 769px) {
+  .skeleton-loading {
+    display: none !important;
+  }
+}
 
 @media only screen and (max-width: 768px) {
-  .skeleton-loader {
+  .desktop-skeleton {
     display: none !important;
   }
 
@@ -1129,4 +1133,134 @@ a {
 }
 .project-link {
   text-decoration: none;
+}
+.skeleton-loading .skeleton-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.icon-skeleton,
+.text-skeleton {
+  background: linear-gradient(90deg, #444 25%, #555 50%, #444 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+.icon-skeleton {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.text-skeleton {
+  width: 40px;
+  height: 8px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5vh; /* Adjust if needed */
+}
+
+/* Base skeleton style with shimmer */
+.mobile-skeleton {
+  background: linear-gradient(90deg, #222 25%, #333 50%, #222 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: 6px;
+  margin-bottom: 2vh;
+}
+
+/* Adjusted sizes using percentages */
+.skeleton-text.short {
+  width: 30%;
+  height: 3%;
+  min-width: 100px;
+  min-height: 15px;
+  margin-bottom: 2vh;
+}
+
+.skeleton-text.medium {
+  width: 40%;
+  height: 4%;
+  min-width: 150px;
+  min-height: 18px;
+}
+
+.skeleton-text.large {
+  width: 60%;
+  height: 5%;
+  min-height: 35px;
+  margin-top: 2vh;
+}
+.skeleton-paragraph {
+  width: 90%;
+  height: 10%;
+  min-height: 100px;
+  max-width: 600px;
+  margin-top: 2vh;
+}
+
+/* Button group styles */
+.skeleton-btn-group {
+  display: flex;
+  gap: 4vw;
+  margin-top: 2vh;
+}
+
+.skeleton-button {
+  width: 30%;
+  height: 5%;
+  min-width: 130px;
+  min-height: 40px;
+  border-radius: 10px;
+  margin-top: 2vh;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.footer-skeleton .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo placeholder */
+.skeleton-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Text placeholder */
+.skeleton-footer-text {
+  width: 60%;
+  height: 25px;
+  margin-top: 10px;
 }
