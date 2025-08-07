@@ -42,7 +42,7 @@ const FetchProjects = () => {
 
   return (
     <>
-      {isLoading && <div class="spinner" id="loading"></div>}
+      {isLoading && <div className="spinner" id="loading"></div>}
       {error && <p style={{ color: "red" }}>{error}</p>}
 
       <div className="row">
@@ -112,7 +112,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <marquee scrollAmount={15}>
+        <marquee>
           <p style={{ color: "#ff4533" }}>
             <b>
               This section is currently undergoing updates. I’m working on new
